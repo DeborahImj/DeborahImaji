@@ -32,7 +32,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // --- ACTIVE LINK TRACKING (Intersection Observer) ---
     const sections = document.querySelectorAll("section[id]");
-    const navLinks = document.querySelectorAll(".nav-link");
+    const navLinks = document.querySelectorAll(".nav-link:not(#faq-special-link)");
+    const faqSpecialLink = document.getElementById("faq-special-link");
 
     const observerOptions = {
         root: null,
@@ -51,6 +52,12 @@ document.addEventListener("DOMContentLoaded", () => {
                         link.classList.add("active");
                     }
                 });
+
+                if (id === "faq") {
+                    faqSpecialLink.style.display = "inline-block"; // Show it
+                } else {
+                    faqSpecialLink.style.display = "none"; // Hide it on all other sections
+                }
             }
         });
     }, observerOptions);
