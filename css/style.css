@@ -50,8 +50,9 @@ body {
     transform: translateX(-50%);
     background: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border: 0.5px solid rgba(83, 80, 80, 1);
-    padding: 4px 28px;
+    padding: 4px 28px 4px 28px;
     border-radius: 100px;
     z-index: 1000;
     align-content: center;
@@ -60,9 +61,13 @@ body {
     column-gap: 16px;
     display: flex;
     height: 44px;
-    justify-content: center;
+    justify-content: space-between;
     overflow: visible;
-    width: min-content;
+    width: max-content;
+}
+
+.navbar.has-button {
+    padding: 4px 2px 4px 28px;
 }
 
 .navbar nav {
@@ -91,8 +96,8 @@ body {
     border-radius: 100px;
     color: rgb(8, 24, 34);
     display: none;
-    padding: 13px 16px;
-    width: 60px;
+    overflow: visible;
+    padding: 9px 16px;
 }
 
 .contact-link:hover {
