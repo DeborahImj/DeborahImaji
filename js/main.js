@@ -54,11 +54,11 @@ document.addEventListener("DOMContentLoaded", () => {
                     }
                 });
 
-                if (id === "projects" || id === "services" || id === "faq") {
-                    faqSpecialLink.style.display = "flex";
+                if (id === "projects" || id === "services" || id === "about" || id === "faq") {
+                    faqSpecialLink.classList.add("show");
                     navbarContainer.classList.add("has-button");
                 } else {
-                    faqSpecialLink.style.display = "none";
+                    faqSpecialLink.classList.remove("show");
                     navbarContainer.classList.remove("has-button");
                 }
             }
