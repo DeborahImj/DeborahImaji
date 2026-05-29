@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // --- ACTIVE LINK TRACKING (Intersection Observer) ---
     const sections = document.querySelectorAll("section[id]");
     const navLinks = document.querySelectorAll(".nav-link:not(#faq-special-link)");
+    const navbarContainer = document.querySelector(".navbar");
     const faqSpecialLink = document.getElementById("faq-special-link");
 
     const observerOptions = {
@@ -54,9 +55,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 });
 
                 if (id === "projects" || id === "services" || id === "faq") {
-                    faqSpecialLink.style.display = "inline-block"; // Show it
+                    faqSpecialLink.style.display = "flex";
+                    navbarContainer.classList.add("has-button");
                 } else {
-                    faqSpecialLink.style.display = "none"; // Hide it on all other sections
+                    faqSpecialLink.style.display = "none";
+                    navbarContainer.classList.remove("has-button");
                 }
             }
         });
