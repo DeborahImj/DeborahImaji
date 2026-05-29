@@ -87,7 +87,16 @@ body {
 }
 
 .contact-link {
+    background: #FFF;
+    border-radius: 100px;
+    color: rgb(8, 24, 34);
     display: none;
+    padding: 13px 16px;
+    width: 60px;
+}
+
+.contact-link:hover {
+    color: rgb(8, 24, 34);
 }
 
 /* HERO SECTION */

@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     }
                 });
 
-                if (id === "faq") {
+                if (id === "projects" || id === "services" || id === "faq") {
                     faqSpecialLink.style.display = "inline-block"; // Show it
                 } else {
                     faqSpecialLink.style.display = "none"; // Hide it on all other sections
