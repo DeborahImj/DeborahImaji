@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    
+
     // --- ACCORDION SYSTEM ---
     const accordionTriggers = document.querySelectorAll(".accordion-trigger");
 
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const id = entry.target.getAttribute("id");
-                
+
                 navLinks.forEach(link => {
                     link.classList.remove("active");
                     if (link.getAttribute("href") === `#${id}`) {
@@ -66,4 +66,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }, observerOptions);
 
     sections.forEach(section => sectionObserver.observe(section));
+
+    // MOBILE NAVBAR
+
+const hamburger = document.querySelector('.hamburger');
+
+hamburger.addEventListener("click", () => {
+    navbarContainer.classList.toggle("is-open");
+});
 });
