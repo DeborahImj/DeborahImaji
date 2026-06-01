@@ -176,45 +176,24 @@ body {
 
 .mobile-nav-bottom a {
     background: linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 255, 255), rgb(198, 252, 166), rgb(198, 252, 166));
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-      color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
     font-size: 1.75rem;
     font-weight: 700;
     padding: 0 0 10px 10px;
     text-decoration: none;
 }
 
+
 /* HERO SECTION */
+
 .hero-section {
     position: relative;
     padding: 160px 0 80px 0;
     text-align: center;
     background: radial-gradient(circle at top, rgba(20, 115, 230, 0.1) 0%, transparent 60%);
-}
-
-.badge-status {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: rgba(60, 208, 112, 0.1);
-    color: var(--accent-green);
-    border: 1px solid rgba(60, 208, 112, 0.2);
-    padding: 6px 16px;
-    border-radius: 100px;
-    font-size: 0.85rem;
-    font-weight: 500;
-    margin-bottom: 32px;
-}
-
-.dot-green {
-    width: 8px;
-    height: 8px;
-    background: var(--accent-green);
-    border-radius: 50%;
-    display: inline-block;
-    box-shadow: 0 0 8px var(--accent-green);
 }
 
 .hero-title {
