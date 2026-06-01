@@ -200,6 +200,43 @@ body {
     top: 0;
 }
 
+.hero-noise-container {
+    inset: 0 0 -100px;
+    opacity: 0.17;
+    position: absolute;
+}
+
+.hero-noise {
+    background-image: url(../assets/hero/hero-noise.png);
+    background-repeat: repeat;
+    background-size: 128px;
+    border-radius: 0;
+    height: 100%;
+    opacity: 0.4;
+    width: 100%;
+}
+
+.hero-light-container {
+    inset: 0 -96px;
+    mix-blend-mode: color-dodge;
+    opacity: 0.5;
+    position: absolute;
+}
+
+.hero-light {
+    border-radius: inherit;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.hero-light img {
+    display: block;
+    width: 100%;
+}
+
 .hero-container {
     padding: 160px 0 0 0;
 }
