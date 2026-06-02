@@ -622,6 +622,8 @@ body {
     font-weight: 600;
 }
 
+.hero-buttons {}
+
 /* MARQUEE RUNNING TEXT */
 .logo-marquee,
 .text-ticker-banner {
