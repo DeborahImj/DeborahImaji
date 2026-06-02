@@ -413,6 +413,115 @@ body {
     width: 100%;
 }
 
+.hero-status {
+    --border-bottom-width: 0.5px;
+    --border-color: #061E17;
+    --border-left-width: 0.5px;
+    --border-right-width: 0.5px;
+    --border-style: solid;
+    --border-top-width: 0.5px;
+    -webkit-backdrop-filter: blur(2px);
+    align-items: center;
+    backdrop-filter: blur(2px);
+    background-color: #001402CC;
+    border-radius: 12px;
+    bottom: 1px;
+    box-shadow: inset 0 -6px 0 -5px #0E250F, 0 2px 7px 0 var(rgb(8, 24, 34), rgb(8, 24, 34));
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 2px;
+    height: min-content;
+    justify-content: center;
+    left: 50%;
+    overflow: hidden;
+    padding: 6px 16px;
+    position: absolute;
+    transform: translate(-50%);
+    width: min-content;
+    will-change: auto;
+}
+
+.hero-status-container {
+    aspect-ratio: 1.103448275862069 / 1;
+    flex: none;
+    height: var(auto, 26px);
+    position: relative;
+    width: 29px;
+}
+
+.hero-globe {
+    height: 100%;
+    width: 100%;
+}
+
+.hero-globe svg {
+    height: 100%;
+    transform: translate3d(0px, 0px, 0px);
+    width: 100%;
+}
+
+.main-globe-core {
+    animation: globePulse 2s ease-in-out infinite alternate;
+}
+
+@keyframes globePulse {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.4;
+        filter: drop-shadow(0 0 4px rgb(68, 194, 80));
+    }
+}
+
+.hero-tag-container {
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-shrink: 0;
+    height: auto;
+    justify-content: flex-start;
+    outline: none;
+    position: relative;
+    transform: none;
+    white-space: pre;
+    width: auto;
+}
+
+.hero-tag-text {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+    text-align: start;
+    text-decoration: none;
+    text-transform: 0;
+}
+
+.hero-tag-container::after {
+    border-color: var(--border-color, none);
+    border-radius: inherit;
+    border-style: var(--border-style, none);
+    border-width: var(--border-top-width, 0) var(--border-right-width, 0) var(--border-bottom-width, 0) var(--border-left-width, 0);
+    box-sizing: border-box;
+    content: "";
+    height: 100%;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.hero-content-text {
+    align-items: center;
+}
+
 /* MARQUEE RUNNING TEXT */
 .logo-marquee,
 .text-ticker-banner {
