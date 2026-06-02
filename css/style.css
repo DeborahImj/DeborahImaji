@@ -254,7 +254,7 @@ body {
     top: -206px;
 }
 
-.hero-ellipse1 {
+.hero-ellipse {
     --border-bottom-width: 1.2419px;
     --border-color: rgba(198, 252, 166, 0.39);
     --border-left-width: 1.2419px;
@@ -265,16 +265,12 @@ body {
     backdrop-filter: blur(62.093px);
     background: linear-gradient(180deg, #0B1903 0%, rgba(15, 0, 14, 0) 100%);
     border-radius: 100%;
-    bottom: -26px;
     box-shadow: inset -1.2419px -1.2419px 1.2419px #C6FCA6, inset -6.2093px 3.2756px 39.7395px #C6FCA694, inset 1.2419px 1.2419px 1.2419px #A7FCEEBD, inset 6.2093px 3.7256px 39.7395px #9DFFD445;
-    height: 1220px;
-    left: calc(50.2333% - 1220px / 2);
     opacity: 0.4;
     position: absolute;
-    width: 1220px;
 }
 
-.hero-ellipse1::after {
+.hero-ellipse::after {
     border-color: var(--border-color, none);
     border-radius: inherit;
     border-style: var(--border-style, none);
@@ -289,58 +285,132 @@ body {
     width: 100%;
 }
 
-.hero-ellipse2 {}
-
-.hero-container {
-    padding: 160px 0 0 0;
+.hero-ellipse1 {
+    bottom: -26px;
+    height: 1220px;
+    left: calc(50.2333% - 1220px / 2);
+    width: 1220px;
 }
 
-.hero-title {
-    font-size: clamp(2.5rem, 5vw, 4.5rem);
-    line-height: 1.1;
-    font-weight: 700;
-    letter-spacing: -0.03em;
-    margin-bottom: 24px;
+.hero-ellipse2 {
+    height: 1020px;
+    left: calc(50.2333% - 1020px / 2);
+    top: calc(51.5353% - 1020px / 2);
+    width: 1020px;
 }
 
-.hero-subtitle {
-    color: var(--text-secondary);
-    font-size: clamp(1.1rem, 2vw, 1.4rem);
-    margin-bottom: 40px;
+.hero-ellipse3 {
+    height: 820px;
+    left: calc(50.2333% - 820px / 2);
+    top: calc(51.5353% - 820px / 2);
+    width: 820px;
 }
 
-/* BUTTONS */
-.btn {
-    display: inline-flex;
+.hero-ellipse4 {
+    height: 620px;
+    left: calc(50.2333% - 620px / 2);
+    top: calc(51.5353% - 620px / 2);
+    width: 620px;
+}
+
+.hero-gradient {
+    background: linear-gradient(180deg, rgba(18, 24, 30, 0) -18.5498%, #051218 95.518%);
+    height: 900px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: -30px;
+}
+
+.hero-top-gradient {
+    background: linear-gradient(180deg, var(rgb(8, 24, 34), #081822) 0%, rgba(14, 28, 34, 0) 100%);
+    height: 124px;
+    left: 0;
+    opacity: 0.74;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 30px;
+}
+
+.hero-stars {
+    background-image: url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%201134%20580%22%3E%3Cg%20opacity%3D%220.2%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22idss3678186748_1g1109944988%22%20x1%3D%220%22%20x2%3D%221%22%20y1%3D%220.7445597065487722%22%20y2%3D%220.25544029345122776%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22rgb(198%2C252%2C166)%22%20stop-opacity%3D%221%22%3E%3C%2Fstop%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22rgba(167%2C252%2C238%2C0.74)%22%20stop-opacity%3D%220.74%22%3E%3C%2Fstop%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Cpath%20d%3D%22M%20301.51%2077.943%20L%20309.493%2085.274%20L%20319.537%2080.144%20L%20311.832%2088.43%20L%20316.545%2098.232%20L%20308.562%2090.901%20L%20298.518%2096.031%20L%20306.223%2087.745%20Z%22%20fill%3D%22url(%23idss3678186748_1g1109944988)%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3Cg%20opacity%3D%220.2%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22idss3678186748_2g-1109944964%22%20x1%3D%220.8258206905684056%22%20x2%3D%220.17417930943159454%22%20y1%3D%221%22%20y2%3D%220%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22rgb(198%2C252%2C166)%22%20stop-opacity%3D%221%22%3E%3C%2Fstop%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22rgba(167%2C252%2C238%2C0.74)%22%20stop-opacity%3D%220.74%22%3E%3C%2Fstop%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Cpath%20d%3D%22M%20279.445%20137.012%20L%20283.389%20131.773%20L%20279.489%20126.168%20L%20284.942%20130.311%20L%20290.426%20126.677%20L%20286.482%20131.917%20L%20290.381%20137.522%20L%20284.929%20133.378%20Z%22%20fill%3D%22url(%23idss3678186748_2g-1109944964)%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3Cpath%20d%3D%22M%201021%20579.192%20C%201021.7%20553.241%201032.22%20489.695%201068.69%20443.123%22%20fill%3D%22transparent%22%20stroke-width%3D%222.80556%22%20stroke%3D%22rgb(NaN%2CNaN%2CNaN)%22%20stroke-miterlimit%3D%2210%22%20stroke-dasharray%3D%22%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M%2073.346%20249.084%20C%2070.467%20237.474%2059.456%20209.915%2038.442%20192.558%22%20fill%3D%22transparent%22%20stroke-width%3D%221.29265%22%20stroke%3D%22rgb(NaN%2CNaN%2CNaN)%22%20stroke-miterlimit%3D%2210%22%20stroke-dasharray%3D%22%22%3E%3C%2Fpath%3E%3Cg%20opacity%3D%220.2%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22idss3678186748_5g-1109945003%22%20x1%3D%220.592401935106172%22%20x2%3D%220.40759806489382805%22%20y1%3D%221%22%20y2%3D%220%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22rgb(198%2C252%2C166)%22%20stop-opacity%3D%221%22%3E%3C%2Fstop%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22rgba(167%2C252%2C238%2C0.74)%22%20stop-opacity%3D%220.74%22%3E%3C%2Fstop%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Cpath%20d%3D%22M%20983.592%20250.416%20L%20996.604%20242.733%20L%20993.239%20227.363%20L%201001.2%20240.988%20L%201016.08%20238.081%20L%201003.06%20245.764%20L%201006.43%20261.133%20L%20998.47%20247.508%20Z%22%20fill%3D%22url(%23idss3678186748_5g-1109945003)%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(131.87%202.026)%22%20id%3D%22ss3678186748_6%22%3E%3Cg%3E%3Cdefs%3E%3CradialGradient%20id%3D%22idss3678186748_7g-1943131669%22%20cy%3D%221.0942496759955325%22%20cx%3D%2211.160324215276955%22%20r%3D%220.7566035478087627%22%20gradientTransform%3D%22translate(11.160324215276955%2C%201.0942496759955325)%20scale(1%201)%20translate(-11.160324215276955%2C%20-1.0942496759955325)%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22rgb(153%2C217%2C183)%22%20stop-opacity%3D%221%22%3E%3C%2Fstop%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22rgb(97%2C255%2C184)%22%20stop-opacity%3D%221%22%3E%3C%2Fstop%3E%3C%2FradialGradient%3E%3C%2Fdefs%3E%3Cpath%20d%3D%22M%204.396%2012.611%20C%203.986%2012.485%203.743%2012.08%203.817%2011.636%20C%204.417%207.663%204.061%206.975%200.532%205.439%20C%200.127%205.259%20-0.09%204.807%200.036%204.397%20C%200.163%203.982%200.586%203.738%201.027%203.805%20C%204.815%204.411%205.401%204.105%207.225%200.513%20C%207.428%200.114%207.845%20-0.088%208.249%200.036%20C%208.665%200.164%208.903%200.566%208.84%201.014%20C%208.23%204.978%208.586%205.666%2012.109%207.2%20C%2012.525%207.39%2012.739%207.829%2012.61%208.25%20C%2012.484%208.659%2012.072%208.907%2011.62%208.837%20C%207.823%208.239%207.244%208.541%205.432%2012.138%20C%205.216%2012.538%204.795%2012.733%204.396%2012.611%20Z%22%20fill%3D%22url(%23idss3678186748_7g-1943131669)%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(1040.447%20329.447)%22%20id%3D%22ss3678186748_8%22%3E%3Cpath%20d%3D%22M%200%204.463%20C%200%201.998%201.998%200%204.463%200%20C%206.928%200%208.927%201.998%208.927%204.463%20C%208.927%206.928%206.928%208.927%204.463%208.927%20C%201.998%208.927%200%206.928%200%204.463%20Z%22%20fill%3D%22transparent%22%20stroke-width%3D%220.892677%22%20stroke%3D%22rgb(NaN%2CNaN%2CNaN)%22%20stroke-miterlimit%3D%2210%22%20stroke-dasharray%3D%22%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(3.522%2076.52)%22%20id%3D%22ss3678186748_10%22%3E%3Cpath%20d%3D%22M%207.705%200.571%20C%2013.593%20-1.377%2019.945%201.817%2021.893%207.705%20C%2023.841%2013.593%2020.647%2019.945%2014.759%2021.893%20C%208.871%2023.841%202.519%2020.647%200.571%2014.759%20C%20-1.377%208.871%201.817%202.519%207.705%200.571%20Z%22%20fill%3D%22transparent%22%20stroke-width%3D%220.892677%22%20stroke%3D%22rgb(NaN%2CNaN%2CNaN)%22%20stroke-miterlimit%3D%2210%22%20stroke-dasharray%3D%22%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(36.57%20428.57)%22%20id%3D%22ss3678186748_12%22%3E%3Cpath%20d%3D%22M%202.621%200.194%20C%204.624%20-0.468%206.785%200.618%207.448%202.621%20C%208.111%204.624%207.024%206.785%205.021%207.448%20C%203.018%208.111%200.857%207.024%200.194%205.021%20C%20-0.468%203.018%200.618%200.857%202.621%200.194%20Z%22%20fill%3D%22transparent%22%20stroke-width%3D%220.892677%22%20stroke%3D%22rgb(NaN%2CNaN%2CNaN)%22%20stroke-miterlimit%3D%2210%22%20stroke-dasharray%3D%22%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(861%2017)%22%20id%3D%22ss3678186748_14%22%3E%3Cg%3E%3Cdefs%3E%3CradialGradient%20id%3D%22idss3678186748_15g921349361%22%20cy%3D%221.9350431870262648%22%20cx%3D%2255.961416824794384%22%20r%3D%220.7275886293173971%22%20gradientTransform%3D%22translate(55.961416824794384%2C%201.9350431870262648)%20scale(1%201)%20translate(-55.961416824794384%2C%20-1.9350431870262648)%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22rgb(137%2C255%2C203)%22%20stop-opacity%3D%221%22%3E%3C%2Fstop%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22rgb(52%2C185%2C126)%22%20stop-opacity%3D%221%22%3E%3C%2Fstop%3E%3C%2FradialGradient%3E%3C%2Fdefs%3E%3Cpath%20d%3D%22M%200%207.715%20C%200%203.454%203.454%200%207.715%200%20C%2011.976%200%2015.431%203.454%2015.431%207.715%20C%2015.431%2011.976%2011.976%2015.431%207.715%2015.431%20C%203.454%2015.431%200%2011.976%200%207.715%20Z%22%20fill%3D%22url(%23idss3678186748_15g921349361)%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(148.19%20238.813)%22%20id%3D%22ss3678186748_16%22%3E%3Cg%3E%3Cdefs%3E%3CradialGradient%20id%3D%22idss3678186748_17g921349273%22%20cy%3D%2298.08460257975172%22%20cx%3D%2260.839552683456866%22%20r%3D%220.7274702165427742%22%20gradientTransform%3D%22translate(60.839552683456866%2C%2098.08460257975172)%20scale(1%201)%20translate(-60.839552683456866%2C%20-98.08460257975172)%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22rgb(137%2C255%2C203)%22%20stop-opacity%3D%221%22%3E%3C%2Fstop%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22rgb(52%2C185%2C126)%22%20stop-opacity%3D%221%22%3E%3C%2Fstop%3E%3C%2FradialGradient%3E%3C%2Fdefs%3E%3Cpath%20d%3D%22M%201.014%200.018%20C%201.678%20-0.096%202.309%200.35%202.423%201.014%20C%202.536%201.678%202.09%202.309%201.426%202.423%20C%200.762%202.536%200.131%202.09%200.018%201.426%20C%20-0.096%200.762%200.35%200.131%201.014%200.018%20Z%22%20fill%3D%22url(%23idss3678186748_17g921349273)%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(910%2071)%22%20id%3D%22ss3678186748_18%22%3E%3Cg%3E%3Cdefs%3E%3CradialGradient%20id%3D%22idss3678186748_19g921349246%22%20cy%3D%2215.03334%22%20cx%3D%22182.163%22%20r%3D%220.7275859999999905%22%20gradientTransform%3D%22translate(182.163%2C%2015.03334)%20scale(1%201)%20translate(-182.163%2C%20-15.03334)%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22rgb(137%2C255%2C203)%22%20stop-opacity%3D%221%22%3E%3C%2Fstop%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22rgb(52%2C185%2C126)%22%20stop-opacity%3D%221%22%3E%3C%2Fstop%3E%3C%2FradialGradient%3E%3C%2Fdefs%3E%3Cpath%20d%3D%22M%200%202.5%20C%200%201.119%201.119%200%202.5%200%20C%203.881%200%205%201.119%205%202.5%20C%205%203.881%203.881%205%202.5%205%20C%201.119%205%200%203.881%200%202.5%20Z%22%20fill%3D%22url(%23idss3678186748_19g921349246)%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(181.152%20201.387)%22%20id%3D%22ss3678186748_20%22%3E%3Cg%3E%3Cdefs%3E%3CradialGradient%20id%3D%22idss3678186748_21g921349323%22%20cy%3D%2241.04669100389468%22%20cx%3D%2237.10989671097391%22%20r%3D%220.7274686531663266%22%20gradientTransform%3D%22translate(37.10989671097391%2C%2041.04669100389468)%20scale(1%201)%20translate(-37.10989671097391%2C%20-41.04669100389468)%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22rgb(137%2C255%2C203)%22%20stop-opacity%3D%221%22%3E%3C%2Fstop%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22rgb(52%2C185%2C126)%22%20stop-opacity%3D%221%22%3E%3C%2Fstop%3E%3C%2FradialGradient%3E%3C%2Fdefs%3E%3Cpath%20d%3D%22M%202.922%204.965%20C%201.561%205.198%200.269%204.283%200.036%202.922%20C%20-0.197%201.561%200.718%200.269%202.079%200.036%20C%203.439%20-0.197%204.732%200.718%204.965%202.079%20C%205.198%203.439%204.283%204.732%202.922%204.965%20Z%22%20fill%3D%22url(%23idss3678186748_21g921349323)%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fg%3E%3Cg%20opacity%3D%220.2%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22idss3678186748_22g1109944992%22%20x1%3D%220.4701447333460841%22%20x2%3D%220.5298552666539158%22%20y1%3D%221%22%20y2%3D%220%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22rgb(198%2C252%2C166)%22%20stop-opacity%3D%221%22%3E%3C%2Fstop%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22rgba(167%2C252%2C238%2C0.74)%22%20stop-opacity%3D%220.74%22%3E%3C%2Fstop%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Cpath%20d%3D%22M%201017.91%20217.452%20L%201024.73%20215.401%20L%201024.92%20207.995%20L%201027.02%20215.12%20L%201034.15%20215.464%20L%201027.34%20217.514%20L%201027.15%20224.92%20L%201025.04%20217.795%20Z%22%20fill%3D%22url(%23idss3678186748_22g1109944992)%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(1006.9%20378.902)%22%20id%3D%22ss3678186748_23%22%3E%3Cpath%20d%3D%22M%200%20104.625%20L%2022.42%200%20L%20127.044%2022.42%20L%20104.625%20127.044%20Z%22%20fill%3D%22transparent%22%3E%3C%2Fpath%3E%3Cg%20transform%3D%22translate(11.21%2011.21)%22%20id%3D%22ss3678186748_25%22%3E%3Cg%20id%3D%22ss3678186748_26%22%3E%3Cg%3E%3Cdefs%3E%3CradialGradient%20id%3D%22idss3678186748_27g-1943131668%22%20cy%3D%224.489796893667862%22%20cx%3D%229.822230717767372%22%20r%3D%220.744070102740235%22%20gradientTransform%3D%22translate(9.822230717767372%2C%204.489796893667862)%20scale(1%201)%20translate(-9.822230717767372%2C%20-4.489796893667862)%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22rgb(153%2C217%2C183)%22%20stop-opacity%3D%221%22%3E%3C%2Fstop%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22rgb(97%2C255%2C184)%22%20stop-opacity%3D%221%22%3E%3C%2Fstop%3E%3C%2FradialGradient%3E%3C%2Fdefs%3E%3Cpath%20d%3D%22M%2041.1%20104.625%20C%2050.21%2054.741%2049.23%2053.245%200%2041.103%20C%2049.88%2050.208%2051.38%2049.234%2063.52%200%20C%2054.42%2049.884%2055.39%2051.38%20104.63%2063.522%20C%2054.74%2054.425%2053.25%2055.376%2041.1%20104.625%20Z%22%20fill%3D%22url(%23idss3678186748_27g-1943131668)%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(10.996%20165)%22%20id%3D%22ss3678186748_28%22%3E%3Cpath%20d%3D%22M%200%2044.634%20L%203.613%200%20L%2048.247%203.613%20L%2044.634%2048.247%20Z%22%20fill%3D%22transparent%22%3E%3C%2Fpath%3E%3Cg%20transform%3D%22translate(1.799%201.806)%22%20id%3D%22ss3678186748_30%22%3E%3Cg%20id%3D%22ss3678186748_31%22%3E%3Cg%3E%3Cdefs%3E%3CradialGradient%20id%3D%22idss3678186748_32g-1943131675%22%20cy%3D%224.543262983375903%22%20cx%3D%220.4227299103592128%22%20r%3D%220.7299656437430473%22%20gradientTransform%3D%22translate(0.4227299103592128%2C%204.543262983375903)%20scale(1%201)%20translate(-0.4227299103592128%2C%20-4.543262983375903)%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22rgb(153%2C217%2C183)%22%20stop-opacity%3D%221%22%3E%3C%2Fstop%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22rgb(97%2C255%2C184)%22%20stop-opacity%3D%221%22%3E%3C%2Fstop%3E%3C%2FradialGradient%3E%3C%2Fdefs%3E%3Cpath%20d%3D%22M%2020.51%2044.634%20C%2021.576%2023.439%2021.09%2022.872%200%2020.511%20C%2021.195%2021.576%2021.763%2021.09%2024.123%200%20C%2023.058%2021.195%2023.544%2021.763%2044.634%2024.124%20C%2023.439%2023.062%2022.872%2023.538%2020.51%2044.634%20Z%22%20fill%3D%22url(%23idss3678186748_32g-1943131675)%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+    background-size: 100% 100%;
+    height: 580px;
+    image-rendering: pixelated;
+    left: calc(50.7031% - 1134px / 2);
+    position: absolute;
+    top: calc(46.6667% - 580px / 2);
+    width: 1134px;
+}
+
+.hero-content {
     align-items: center;
-    gap: 10px;
-    padding: 14px 28px;
-    border-radius: 100px;
-    font-size: 1rem;
-    font-weight: 600;
-    text-decoration: none;
-    transition: var(--transition-smooth);
-    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 32px;
+    height: min-content;
+    justify-content: flex-start;
+    left: 50%;
+    overflow: visible;
+    padding: 0;
+    position: absolute;
+    top: 160px;
+    transform: translate(-50%);
+    width: min-content;
 }
 
-.btn-primary {
-    background: var(--text-primary);
-    color: var(--bg-dark);
+.hero-content-top {
+    flex: none;
+    height: 102px;
+    opacity: 1;
+    overflow: visible;
+    position: relative;
+    transform: perspective(1200px);
+    width: 276px;
 }
 
-.btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+.hero-avatar {
+    height: 89px;
+    left: calc(50.00000000000002% - 64px / 2);
+    overflow: visible;
+    position: absolute;
+    top: -2px;
+    transform: rotate(5deg);
+    width: 64px;
 }
 
-.btn-secondary {
-    background: transparent;
-    color: var(--text-primary);
-    border: 1px solid var(--border-color);
+.hero-avatar-image {
+    aspect-ratio: .8961106006716164 / 1;
+    height: var(auto, 67px);
+    left: 50%;
+    position: absolute;
+    top: 1px;
+    transform: translateX(-50%);
+    width: 60px;
 }
 
-.btn-secondary:hover {
-    background: rgba(255, 255, 255, 0.05);
+.hero-image-wrapper {
+    border-radius: inherit;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.hero-image-wrapper img {
+    border-radius: inherit;
+    display: block;
+    height: 100%;
+    image-rendering: auto;
+    object-fit: fill;
+    object-position: center;
+    overflow: clip;
+    overflow-clip-margin: content-box;
+    width: 100%;
 }
 
 /* MARQUEE RUNNING TEXT */
