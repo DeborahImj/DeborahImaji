@@ -597,13 +597,30 @@ body {
     outline: none;
     position: relative;
     transform: perspective(1200px);
-    white-space: pre-wrap;
+    white-space: normal;
     width: 544px;
     word-break: break-word;
     word-wrap: break-word;
 }
 
-.hero-desc {}
+.hero-desc {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1.5rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.hero-desc-text {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 1rem;
+    font-weight: 600;
+}
 
 /* MARQUEE RUNNING TEXT */
 .logo-marquee,
