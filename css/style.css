@@ -262,7 +262,34 @@ body {
     --border-style: solid;
     --border-top-width: 1.2419px;
     -webkit-backdrop-filter: blur(62.093px);
+    backdrop-filter: blur(62.093px);
+    background: linear-gradient(180deg, #0B1903 0%, rgba(15, 0, 14, 0) 100%);
+    border-radius: 100%;
+    bottom: -26px;
+    box-shadow: inset -1.2419px -1.2419px 1.2419px #C6FCA6, inset -6.2093px 3.2756px 39.7395px #C6FCA694, inset 1.2419px 1.2419px 1.2419px #A7FCEEBD, inset 6.2093px 3.7256px 39.7395px #9DFFD445;
+    height: 1220px;
+    left: calc(50.2333% - 1220px / 2);
+    opacity: 0.4;
+    position: absolute;
+    width: 1220px;
 }
+
+.hero-ellipse1::after {
+    border-color: var(--border-color, none);
+    border-radius: inherit;
+    border-style: var(--border-style, none);
+    border-width: var(--border-top-width, 0) var(--border-right-width, 0) var(--border-bottom-width, 0) var(--border-left-width, 0);
+    box-sizing: border-box;
+    content: "";
+    height: 100%;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.hero-ellipse2 {}
 
 .hero-container {
     padding: 160px 0 0 0;
