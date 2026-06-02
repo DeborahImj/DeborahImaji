@@ -25,6 +25,14 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Pockota Medium';
+    src: url('../assets/fonts/pockota-medium.woff2') format('woff2');
+    font-weight: medium;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
     background-color: var(--bg-dark);
     color: var(--text-primary);
@@ -520,7 +528,82 @@ body {
 
 .hero-content-text {
     align-items: center;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 32px;
+    height: min-content;
+    justify-content: center;
+    overflow: visible;
+    padding: 0;
+    position: relative;
+    width: min-content;
 }
+
+.hero-text-top {
+    align-items: center;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 16px;
+    height: min-content;
+    justify-content: flex-start;
+    overflow: visible;
+    padding: 0;
+    position: relative;
+    width: min-content;
+}
+
+.hero-heading-container {
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-shrink: 0;
+    height: auto;
+    justify-content: center;
+    opacity: 1;
+    outline: none;
+    position: relative;
+    transform: perspective(1200px);
+    white-space: pre-wrap;
+    width: 544px;
+    word-break: break-word;
+    word-wrap: break-word;
+}
+
+.hero-heading {
+    color: rgb(255, 255, 255);
+    font-family: 'Pockota Medium', serif;
+    font-size: 3rem;
+    letter-spacing: 0;
+    line-height: 1.2rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.hero-desc-container {
+    display: flex;
+    flex-direction: column;
+    flex: none;
+    flex-shrink: 0;
+    height: auto;
+    justify-content: center;
+    opacity: 1;
+    outline: none;
+    position: relative;
+    transform: perspective(1200px);
+    white-space: pre-wrap;
+    width: 544px;
+    word-break: break-word;
+    word-wrap: break-word;
+}
+
+.hero-desc {}
 
 /* MARQUEE RUNNING TEXT */
 .logo-marquee,
