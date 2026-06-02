@@ -233,8 +233,35 @@ body {
 }
 
 .hero-light img {
+    border-radius: inherit;
     display: block;
+    height: 100%;
+    image-rendering: auto;
+    object-fit: fill;
+    object-position: center;
+    overflow: clip;
+    overflow-clip-margin: content-box;
     width: 100%;
+}
+
+
+.hero-circles {
+    bottom: -99px;
+    inset: -236px 0 -69px -6px;
+    opacity: 0.25;
+    overflow: hidden;
+    position: absolute;
+    top: -206px;
+}
+
+.hero-ellipse1 {
+    --border-bottom-width: 1.2419px;
+    --border-color: rgba(198, 252, 166, 0.39);
+    --border-left-width: 1.2419px;
+    --border-right-width: 1.2419px;
+    --border-style: solid;
+    --border-top-width: 1.2419px;
+    -webkit-backdrop-filter: blur(62.093px);
 }
 
 .hero-container {
