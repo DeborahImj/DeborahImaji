@@ -947,6 +947,10 @@ body {
     width: 100%;
 }
 
+.marquee-li {
+    display: contents;
+}
+
 /* MARQUEE RUNNING TEXT */
 /*
 .logo-marquee,
