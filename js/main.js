@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log('resetAt:', resetAt);
 
         let position = 0;
-        const speed = 1;
+        const speed = 2;
 
         function step() {
             position -= speed;
