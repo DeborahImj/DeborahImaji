@@ -69,9 +69,37 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // MOBILE NAVBAR
 
-const hamburger = document.querySelector('.hamburger');
+    const hamburger = document.querySelector('.hamburger');
 
-hamburger.addEventListener("click", () => {
-    navbarContainer.classList.toggle("is-open");
-});
+    hamburger.addEventListener("click", () => {
+        navbarContainer.classList.toggle("is-open");
+    });
+
+    // MARQUEE
+
+    function animateMarquee() {
+        const ul = document.querySelector('.hero-marquee-ul');
+        const items = ul.querySelectorAll('li');
+
+        const resetAt = items[5].offsetLeft - items[0].offsetLeft;
+        console.log('resetAt:', resetAt);
+
+        let position = 0;
+        const speed = 1;
+
+        function step() {
+            position -= speed;
+
+            if (Math.abs(position) >= resetAt) {
+                position = 0;
+            }
+
+            ul.style.transform = `translateX(${position}px)`;
+            requestAnimationFrame(step);
+        }
+
+        requestAnimationFrame(step);
+    }
+
+    animateMarquee();
 });
