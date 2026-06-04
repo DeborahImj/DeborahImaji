@@ -1348,6 +1348,8 @@ body {
 
     .hero-section {
         left: calc(50.00000000000002% - 100% / 2);
+        height: 825px;
+        padding: 0 0 80px 0;
         right: unset;
         width: 100%;
     }
@@ -1392,6 +1394,7 @@ body {
 
     .hero-gradient {
         background: linear-gradient(180deg, rgba(18, 24, 30, 0) -18.549815220254256%, #051218 80%);
+        height: 1105px;
         right: unset;
         top: -205px;
         width: 100%;
@@ -1468,6 +1471,6 @@ body {
     .hero-marquee {
         height: 61px;
         left: calc(50.00000000000002% - 100% / 2);
-        top: 670px;
+        top: 680px;
     }
 }
