@@ -1418,6 +1418,11 @@ body {
 
     .hero-content-text {
         gap: 40px;
+        width: 100%;
+    }
+
+    .hero-text-top {
+        width: 100%;
     }
 
     .hero-heading-container {
@@ -1426,8 +1431,43 @@ body {
     }
 
     .hero-heading {
-        font-size: 2rem;
-        line-height: 2.75rem;
-        margin: -110px 0 -50px 0;
+        font-size: 2.2rem;
+        line-height: 2.95rem;
+        text-align: center;
+        margin: -90px 0 -50px 0;
+    }
+
+    .heading-break {
+        display: none;
+    }
+
+    .hero-desc-container {
+        width: 328px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-button1-container {
+        width: 312px;
+    }
+
+    .hero-button1-link {
+        width: 312px;
+    }
+
+    .hero-button2-container {
+        width: 312px;
+    }
+
+    .hero-button2-link {
+        width: 312px;
+    }
+
+    .hero-marquee {
+        height: 61px;
+        left: calc(50.00000000000002% - 100% / 2);
+        top: 670px;
     }
 }
