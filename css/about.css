@@ -1,0 +1,195 @@
+/* DESIGN SYSTEM & GLOBAL VARIABLES */
+:root {
+    --bg-dark: #070f12;
+    --bg-card: #0d171b;
+    --text-primary: #ffffff;
+    --text-secondary: #8da2a6;
+    --accent-green: #3cd070;
+    --accent-blue: #1473e6;
+    --border-color: rgba(255, 255, 255, 0.08);
+    --font-main: "Manrope", sans-serif;
+    --transition-smooth: all 0.35s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.manrope {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pockota Medium';
+    src: url('../assets/fonts/pockota-medium.woff2') format('woff2');
+    font-weight: medium;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+    font-family: "Manrope", sans-serif;
+    font-size: 0.75rem;
+    overflow-x: hidden;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* NAVIGATION */
+.navbar {
+    position: fixed;
+    top: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 0.5px solid rgba(83, 80, 80, 1);
+    padding: 4px 28px 4px 28px;
+    border-radius: 100px;
+    z-index: 1000;
+    align-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.1) -1px 2px 12px 0px;
+    column-gap: 16px;
+    display: flex;
+    height: 46px;
+    justify-content: space-between;
+    overflow: hidden;
+    width: max-content;
+
+    transition: padding 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.navbar.has-button {
+    padding: 4px 2px 4px 28px;
+}
+
+.navbar nav {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-content: center;
+    align-items: center;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    padding: 9px 10px;
+    font-size: 0.875rem;
+    font-weight: 700;
+    border-radius: 100px;
+    transition: var(--transition-smooth);
+}
+
+.nav-link:hover {
+    color: rgb(198, 252, 166);
+}
+
+.contact-link {
+    background: #FFF;
+    border-radius: 100px;
+    color: rgb(8, 24, 34);
+    overflow: visible;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    white-space: nowrap;
+
+    max-width: 0px;
+    opacity: 0;
+    padding: 0;
+    transform: translateX(20px);
+
+    transition:
+        max-width 0.5s cubic-bezier(0.25, 1, 0.5, 1),
+        padding 0.5s cubic-bezier(0.25, 1, 0.5, 1),
+        opacity 0.4s ease,
+        transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.contact-link.show {
+    max-width: 150px;
+    opacity: 1;
+    padding: 9px 16px;
+    margin-left: 12px;
+    transform: translateX(0);
+}
+
+.contact-link:hover {
+    color: rgb(8, 24, 34);
+}
+
+.mobile-nav-top {
+    display: none;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-brand {
+    width: 46px;
+}
+
+.burger-bar {
+    background: rgb(102, 102, 102);
+    border-radius: 10px;
+    height: 2px;
+    margin: 10px 0;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    width: 22.5px;
+}
+
+.navbar.is-open .burger-bar:first-child {
+    transform: translateY(5.75px) rotate(45deg);
+}
+
+.navbar.is-open .burger-bar:last-child {
+    transform: translateY(-5.75px) rotate(-45deg);
+}
+
+.mobile-nav-bottom {
+    align-items: flex-start;
+    display: none;
+    flex-direction: column;
+    max-height: 0px;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.3s ease;
+    width: 100%;
+}
+
+.navbar.is-open .mobile-nav-bottom {
+    display: flex;
+    max-height: 300px;
+    opacity: 1;
+}
+
+.mobile-nav-bottom a {
+    background: linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 255, 255), rgb(198, 252, 166), rgb(198, 252, 166));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-size: 1.75rem;
+    font-weight: 700;
+    padding: 0 0 10px 10px;
+    text-decoration: none;
+}

@@ -969,42 +969,11 @@ body {
     position: absolute;
 }
 
-/* SECTION STRUCTURE */
+/* CASE STUDIES GRID Layout */
 #projects {
     margin-top: 900px;
 }
 
-.section {
-    padding: 100px 0;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.section-tagline {
-    font-size: 0.85rem;
-    font-weight: 700;
-    color: var(--accent-blue);
-    letter-spacing: 0.15em;
-    display: block;
-    margin-bottom: 12px;
-}
-
-.section-title {
-    font-size: clamp(2rem, 4vw, 3rem);
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    margin-bottom: 16px;
-}
-
-.section-desc {
-    color: var(--text-secondary);
-    font-size: 1.1rem;
-    margin-bottom: 60px;
-}
-
-/* CASE STUDIES GRID Layout */
 .case-studies-grid {
     display: flex;
     flex-direction: column;
@@ -1250,40 +1219,6 @@ body {
 
 .accordion-item.active .accordion-content {
     max-height: 200px;
-}
-
-/* ABOUT SECTION POLAROID STYLING */
-.about-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 8px;
-    align-items: center;
-}
-
-.polaroid-frame {
-    background: #ffffff;
-    padding: 16px 16px 40px 16px;
-    border-radius: 8px;
-    transform: rotate(3deg);
-    max-width: 340px;
-    margin: 0 auto;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-}
-
-.polaroid-img-placeholder {
-    background: #cbd5e1;
-    height: 300px;
-    width: 100%;
-    border-radius: 4px;
-}
-
-.polaroid-label {
-    color: #070f12;
-    font-family: sans-serif;
-    font-weight: 700;
-    margin-top: 16px;
-    font-size: 1.1rem;
-    text-align: center;
 }
 
 /* RESPONSIVE LAYOUT */
