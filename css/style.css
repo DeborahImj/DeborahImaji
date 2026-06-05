@@ -1144,6 +1144,184 @@ body {
     margin-top: 20px;
 }
 
+
+/* ABOUT SECTION */
+
+.about-section {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+    height: 442px;
+    justify-content: center;
+    left: calc(50.00000000000002% - 100% / 2);
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    top: 5284px;
+    width: 100%;
+}
+
+.about-full-section {
+    align-items: center;
+    display: flex;
+    flex: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 442px;
+    justify-content: space-between;
+    overflow: visible;
+    padding: 0;
+    position: relative;
+    width: 1059px;
+}
+
+.about-text-section {
+    align-items: flex-start;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    gap: 20px;
+    height: min-content;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    height: 630px;
+}
+
+.about-section-heading {
+    align-items: flex-start;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 24px;
+    height: min-content;
+    justify-content: flex-start;
+    overflow: visible;
+    padding: 0;
+    position: relative;
+    width: min-content;
+    z-index: 1;
+}
+
+.about-title-container {
+    outline: none;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    transform: none;
+    width: auto;
+}
+
+.about-title {
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.4em;
+    line-height: 120%;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.about-title span {
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(99.6983deg, rgb(198, 252, 166) 0%, rgba(167, 252, 238, 0.74) 100%);
+    display: inline-block;
+    padding: max(0em, calc(calc(1.3em - 120%) / 2));
+}
+
+.about-header-container {
+    align-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 16px;
+    height: min-content;
+    justify-content: flex-start;
+    overflow: visible;
+    padding: 0;
+    position: relative;
+    width: min-content;
+}
+
+.about-header-title {
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    transform: none;
+
+    flex: none;
+    height: auto;
+    position: relative;
+    white-space: pre;
+    width: auto;
+}
+
+.about-header-title p {
+    color: rgb(255, 255, 255);
+    font-family: 'Pockota Medium';
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 120%;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.about-header-subtitle {
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    transform: none;
+
+    flex: none;
+    height: auto;
+    position: relative;
+    white-space: pre;
+    width: auto;
+}
+
+.about-header-subtitle p {
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    line-height: 150%;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.about-section-content {
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    transform: none;
+
+    flex: none;
+    height: auto;
+    position: relative;
+    /* white-space: pre-wrap; */
+    width: 100%;
+    word-break: break-word;
+    word-wrap: break-word;
+}
+
 /* FAQ ACCORDION STRUCTURE */
 .faq-grid {
     display: grid;
