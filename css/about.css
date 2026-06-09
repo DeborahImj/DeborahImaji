@@ -369,7 +369,7 @@ body {
     width: min-content;
 }
 
-.experience1-entry {
+.experience-entry {
     align-items: flex-start;
     align-self: stretch;
     display: flex;
@@ -383,7 +383,7 @@ body {
     width: auto;
 }
 
-.experience1-title {
+.experience-title {
     align-items: flex-start;
     display: flex;
     flex: 0 0 auto;
@@ -396,7 +396,7 @@ body {
     width: 290px;
 }
 
-.experience1-company {
+.experience-company {
     align-items: flex-start;
     display: flex;
     flex: 0 0 auto;
@@ -409,7 +409,7 @@ body {
     width: min-content;
 }
 
-.experience1-company-container {
+.experience-company-container {
     outline: none;
     display: flex;
     flex-direction: column;
@@ -424,7 +424,7 @@ body {
     width: auto;
 }
 
-.experience1-company-text {
+.experience-company-text {
     color: rgb(255, 255, 255);
     font-size: 1.125rem;
     font-weight: 600;
@@ -434,11 +434,11 @@ body {
     text-align: start;
 }
 
-.experience1-company-text span {
+.experience-company-text span {
     color: rgb(198, 252, 166);
 }
 
-.experience1-date {
+.experience-date {
     outline: none;
     display: flex;
     flex-direction: column;
@@ -453,7 +453,7 @@ body {
     width: auto;
 }
 
-.experience1-date p {
+.experience-date p {
     color: rgba(255, 255, 255, 0.8);
     font-size: 0.875rem;
     font-style: italic;
@@ -464,7 +464,7 @@ body {
     text-align: start;
 }
 
-.experience1-details {
+.experience-details {
     align-items: flex-start;
     display: flex;
     flex: 0 0 auto;
@@ -477,7 +477,7 @@ body {
     width: 309px;
 }
 
-.experience1-details-container {
+.experience-details-container {
     align-items: flex-start;
     display: flex;
     flex: 0 0 auto;
@@ -490,7 +490,7 @@ body {
     width: 100%;
 }
 
-.experience1-details-text {
+.experience-details-text {
     outline: none;
     display: flex;
     flex-direction: column;
@@ -507,7 +507,7 @@ body {
     overflow-wrap: break-word;
 }
 
-.experience1-desc {
+.experience-desc {
     color: #000;
     font-size: 0.875rem;
     font-weight: 400;
@@ -517,7 +517,7 @@ body {
     text-align: start;
 }
 
-.experience1-desc span {
+.experience-desc span {
     color: rgba(255, 255, 255, 0.8);
     font-size: 0.875rem;
     font-weight: 400;
@@ -532,9 +532,10 @@ body {
     flex-shrink: 0;
     fill: rgb(0, 0, 0);
     color: rgb(0, 0, 0);
+    background: rgba(255, 255, 255, 0.25);
 
     flex: 0 0 auto;
-    height: 3px;
+    height: 1px;
     position: relative;
     width: 654px;
 }
@@ -549,7 +550,4 @@ body {
     width: 100%;
     height: 100%;
     display: block;
-
-    overflow-clip-margin: content-box;
-    overflow: hidden;
 }
