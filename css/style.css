@@ -1315,9 +1315,9 @@ body {
 
     flex: none;
     height: auto;
+    margin: 0 0 0 -110px;
     position: relative;
     white-space: pre-wrap;
-    width: 100%;
     word-break: break-word;
     word-wrap: break-word;
 }
@@ -1468,6 +1468,87 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
+}
+
+.about-image-wrapper img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    object-position: center;
+    object-fit: fill;
+    image-rendering: auto;
+}
+
+.about-mouse {
+    height: 45px;
+    left: 1063px;
+    overflow: visible;
+    position: absolute;
+    top: 6681px;
+    width: 104px;
+}
+
+.about-mouse-arrow {
+    image-rendering: pixelated;
+    fill: rgba(0, 0, 0, 1);
+    color: rgba(0, 0, 0, 1);
+
+    inset: -2px 92px 30px -2px;
+    position: absolute;
+}
+
+.about-mouse-arrow-container {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: inherit;
+}
+
+.about-mouse-arrow-container svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.about-mouse-name {
+    align-items: flex-start;
+    background: linear-gradient(99.69833281472663deg, #c6fca6 0%, rgba(167, 252, 238, .7400000095367432) 100%);
+    box-shadow: 0 2.5999996662139893px 5.1999993324279785px #0000001f;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0px;
+    height: min-content;
+    justify-content: flex-start;
+    left: 17px;
+    overflow: hidden;
+    padding: 2.5999996662139893px 4.0430006980896px 1.5470006465911865px 5.1999993324279785px;
+    position: absolute;
+    top: 23px;
+    width: min-content;
+}
+
+.about-mouse-name-container {
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    transform: none;
+
+    flex: none;
+    height: auto;
+    position: relative;
+    white-space: pre;
+    width: auto;
+}
+
+.about-mouse-name-container p {
+    color: #000;
+    font-size: 0.894rem;
+    font-weight: 400;
+    line-height: 1.073rem;
+    text-align: start;
 }
 
 /* FAQ ACCORDION STRUCTURE */
