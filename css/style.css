@@ -1244,11 +1244,32 @@ body {
 }
 
 .about-label {
+    align-items: center;
     display: flex;
+    gap: 10px;
     justify-content: center;
-    margin-left: 25px;
+    margin: -90px 0 0 350px;
 }
 
+.about-label-arrow p {
+    background-clip: text;
+    background-image: linear-gradient(99.6983deg, rgb(198, 252, 166) 0%, rgba(167, 252, 238, 0.74) 100%);
+    font-size: 1.1rem;
+    transform: rotate(-40deg);
+    -webkit-text-fill-color: transparent;
+}
+
+.about-label-name {
+    background: linear-gradient(99.6983deg, rgb(198, 252, 166) 0%, rgba(167, 252, 238, 0.74) 100%);
+    margin-top: 60px;
+    padding: 1px 7px;
+}
+
+.about-label-name p {
+    color: rgb(0, 0, 0);
+    font-size: 0.8rem;
+    font-weight: 500;
+}
 
 /* FAQ ACCORDION STRUCTURE */
 .faq-grid {
