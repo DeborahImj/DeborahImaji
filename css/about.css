@@ -308,14 +308,34 @@ footer,
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 16px;
     margin: 50px 0 0 0;
+    overflow: hidden;
+    padding: 35px 30px 0 30px;
+    position: relative;
 }
 
-.bento-book-header {
+.bento-box-header {
     display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
 }
 
-.bento-book-header svg {
-    width: 32px;
+.bento-box-header h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.903rem;
+}
+
+.bento-box-sub {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.428rem;
+}
+
+.bento-book-image {
+    bottom: -109px;
+    position: absolute;
+    width: 170px;
 }
 
 
