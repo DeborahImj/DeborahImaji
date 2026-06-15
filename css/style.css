@@ -1154,10 +1154,8 @@ body {
 .about-container {
     align-items: center;
     display: flex;
-    gap: 120px;
-    justify-content: space-between;
+    flex-direction: column;
     margin: 0 auto;
-    width: 56%;
 }
 
 .about-title {
@@ -1231,6 +1229,10 @@ body {
 
 .about-image {
     transform: rotate(8deg);
+}
+
+.about-image.desktop {
+  display: none;
 }
 
 .about-image-wrapper {
