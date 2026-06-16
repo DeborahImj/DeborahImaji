@@ -219,7 +219,7 @@ footer,
     align-items: center;
     display: flex;
     flex-direction: column;
-    padding: 150px 35px 150px 35px;
+    padding: 150px 35px 125px 35px;
     text-align: center;
 }
 
@@ -278,21 +278,24 @@ footer,
 
 .bento-box {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    padding: 0 25px;
 }
 
 .bento-header span {
     background-clip: text;
     background-image: linear-gradient(99.6983deg, rgb(198, 252, 166) 0%, rgba(167, 252, 238, 0.74) 100%);
-    font-size: 1.25rem;
+    font-size: 0.75rem;
     font-weight: 600;
     line-height: 3.5rem;
+    margin-bottom: 25px;
     -webkit-text-fill-color: transparent;
 }
 
 .bento-header h2 {
     font-family: 'Pockota Medium';
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     font-weight: 400;
     letter-spacing: -0.05rem;
     line-height: 2.813rem;
@@ -301,23 +304,24 @@ footer,
 .bento-row {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    width: 342px;
+    /*width: 342px;*/
+    width: 100%;
 }
 
 .bento-book {
     background: rgba(0, 0, 0, 0.14);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 16px;
-    margin: 50px 0 0 0;
+    height: 350px;
+    margin: 40px 0 0 0;
     overflow: hidden;
-    padding: 35px 30px 0 30px;
+    padding: 40px 20px 0 20px;
     position: relative;
 }
 
 .bento-box-header {
     display: flex;
-    gap: 15px;
+    gap: 10px;
     margin-bottom: 10px;
 }
 
@@ -335,9 +339,19 @@ footer,
 }
 
 .bento-book-image {
-    bottom: -109px;
-    position: absolute;
+    bottom: -55px;
+    left: 60px;
+    position: relative;
     width: 170px;
+}
+
+
+bento-book-ellipse {
+  background: linear-gradient(99.6983deg, rgb(198, 252, 166) 13.0032%, rgba(190, 252, 188, 0.93) 50.0223%, rgba(167, 252, 238, 0.74) 100%);
+  border-radius: 100%;
+  filter: blur(69.8857px);
+  transform: translateX(-50%) rotate(-90deg);
+  transform-origin: 50% 50% 0px;
 }
 
 
