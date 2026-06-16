@@ -1188,8 +1188,8 @@ body {
     color: rgba(255, 255, 255, 0.5);
     font-size: 1.05rem;
     font-weight: 500;
-    line-height: 1.95rem;
-    margin: 100px 0 100px 0;
+    line-height: 1.85rem;
+    margin: 100px 0 40px 0;
     text-align: left;
 }
 
@@ -1202,7 +1202,8 @@ body {
     padding: 12px 20px;
     text-decoration: none;
     transition: all 400ms ease-in-out;
-    width: 187px;
+    /*width: 187px;*/
+    width: 100%;
 }
 
 .about-more-link:hover {
@@ -1255,9 +1256,10 @@ body {
     display: flex;
     gap: 10px;
     justify-content: center;
+    left: 40px;
     /*margin: -575px 0 0 85px;*/
     position: relative;
-    top: 0;
+    top: -580px;
 }
 
 .about-label-arrow p {
