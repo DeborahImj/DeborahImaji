@@ -342,16 +342,71 @@ footer,
     bottom: -55px;
     left: 60px;
     position: relative;
+    transition: all 400ms ease-in-out;
     width: 170px;
+    z-index: 1;
+}
+
+.bento-book-image:hover {
+  transform: scale(1.1);
 }
 
 
-bento-book-ellipse {
+.bento-book-ellipse {
+  aspect-ratio: 0.5915697585944936 / 1;
   background: linear-gradient(99.6983deg, rgb(198, 252, 166) 13.0032%, rgba(190, 252, 188, 0.93) 50.0223%, rgba(167, 252, 238, 0.74) 100%);
   border-radius: 100%;
+  bottom: -55px;
   filter: blur(69.8857px);
+  height: 206px;
+  left: 50%;
+  opacity: 1;
+  position: absolute;
   transform: translateX(-50%) rotate(-90deg);
-  transform-origin: 50% 50% 0px;
+  transition: all 400ms ease-in-out;
+  width: 122px;
+}
+
+.bento-book-ellipse:hover {
+  transform: scale(1.1);
+}
+
+.tech-stack-box {
+    background: rgba(0, 0, 0, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    height: 340px;
+    margin: 20px 0 0 0;
+    overflow: hidden;
+    padding: 40px 20px 0 20px;
+    position: relative;
+}
+
+.tech-stack-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 40px 0 0 0;
+}
+
+.tech-stack-tech {
+  align-items: center;
+  background: rgb(8, 23, 33);
+  border: 1px solid rgb(13, 38, 53);
+  border-radius: 16px;
+  box-shadow: rgb(18, 42, 58) 0.5px -3.5px 6px 0px inset, rgb(6, 17, 24) 1px 2px 4px 0px;
+  display: flex;
+  gap: 5px
+  height: 65px;
+  justify-content: flex-start;
+  margin: 0 0 20px 0;
+  opacity: 1;
+  padding: 25px;
+  width: 70px;
+}
+
+.tech-stack-tech img {
+  width: 100%;
 }
 
 
