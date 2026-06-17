@@ -375,18 +375,37 @@ footer,
     background: rgba(0, 0, 0, 0.14);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 16px;
-    height: 340px;
+    height: 280px;
     margin: 20px 0 0 0;
     overflow: hidden;
     padding: 40px 20px 0 20px;
     position: relative;
 }
 
+.bento-tech-ellipse {
+  aspect-ratio: 0.5915697585944936 / 1;
+  background: linear-gradient(99.6983deg, rgb(198, 252, 166) 0%, rgba(167, 252, 238, 0.74) 100%);
+  border-radius: 100%;
+  filter: blur(69.8857px);
+  height: 206px;
+  left: -76px;
+  opacity: 1;
+  position: absolute;
+  top: -127px;
+  transition: all 400ms ease-in-out;
+  width: 122px;
+}
+
+.bento-tech-ellipse:hover {
+  transform: scale(1.1);
+}
+
 .tech-stack-content {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 40px 0 0 0;
+  gap: 5px;
+  justify-content: flex-start;
+  margin: 30px 0 0 0;
 }
 
 .tech-stack-tech {
@@ -396,17 +415,46 @@ footer,
   border-radius: 16px;
   box-shadow: rgb(18, 42, 58) 0.5px -3.5px 6px 0px inset, rgb(6, 17, 24) 1px 2px 4px 0px;
   display: flex;
-  gap: 5px
   height: 65px;
   justify-content: flex-start;
-  margin: 0 0 20px 0;
+  margin: 0 0 5px 0;
   opacity: 1;
-  padding: 25px;
-  width: 70px;
+  padding: 20px;
+  width: 65px;
 }
 
 .tech-stack-tech img {
   width: 100%;
+}
+
+.bento-sticker-box {
+  background: rgba(0, 0, 0, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    height: 125px;
+    margin: 20px 0 0 0;
+    padding: 5px 0;
+}
+
+
+.bento-sticker-box svg {
+  margin: 0 auto;
+  transition: all 400ms ease-in-out;
+  width: 50px;
+}
+
+
+.bento-sticker-box svg:hover {
+  transform: scale(1.1);
+}
+
+.bento-heroes-box {
+  background: linear-gradient(99.6983deg, rgb(198, 252, 166) 0%, rgba(167, 252, 238, 0.74) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  height: 140px;
+  margin: 20px 0 0 0;
+  position: relative;
 }
 
 
