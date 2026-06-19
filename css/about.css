@@ -522,7 +522,7 @@ footer,
   height: 200px;
   justify-content: flex-end;
   margin: 20px 0 0 0;
-  padding: 15px;
+  padding: 25px 10px 10px 10px;
 }
 
 
@@ -538,8 +538,59 @@ footer,
 .map-label-container {
   align-self: flex-start;
   background: rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
-  padding: 10px;
+  border-radius: 30px;
+  padding: 5px 15px;
+}
+
+.map-label-container p {
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.bento-persona-box {
+    background: rgba(0, 0, 0, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    height: 350px;
+    margin: 20px 0 0 0;
+    overflow: hidden;
+    padding: 40px 20px 0 20px;
+    position: relative;
+}
+
+.persona-labels div {
+  align-items: start;
+  background: linear-gradient(99.69833281472663deg, rgba(198, 252, 166, 1) 0%, rgba(167, 252, 238, 0.7400000095367432) 100%);
+  border-radius: 41.87px;
+  color: rgb(21, 21, 21);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  font-size: 1.125rem;
+  font-weight: 600;
+  height: min-content;
+  justify-content: flex-start;
+  line-height: 1.903rem;
+  overflow: visible;
+  padding: 7.6132px 27.9151px;
+  position: relative;
+  width: max-content;
+}
+
+.persona-labels div:nth-child(1) {
+  left: 190px;
+  top: 55px;
+}
+
+.persona-labels div:nth-child(2) {
+  left: -10px;
+  top: 60px;
+}
+
+.persona-labels div:nth-child(3) {
+}
+
+.persona-labels div:nth-child(4) {
 }
 
 
