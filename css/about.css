@@ -215,6 +215,11 @@ footer,
 
 /* HERO */
 
+
+.main {
+  overflow: hidden;
+}
+
 .main-header {
     align-items: center;
     display: flex;
@@ -604,6 +609,11 @@ footer,
 
 /* EXPERIENCE */
 
+.experience-section {
+  overflow: hidden;
+  padding: 150px 30px;
+}
+
 .experience-ellipse {
   --border-bottom-width: 1px;
   --border-color: rgba(255, 255, 255, 0.1);
@@ -618,17 +628,44 @@ footer,
   opacity: 0.5;
   position: absolute;
   right: -457px;
-  top: 2490px;
+  top: 2500px;
 }
 
 .experience-ellipse::after {
   border-color: var(--border-color);
+  border-radius: inherit;
   border-style: solid;
   border-width: var(--border-top-width) var(--border-right-width) var(--border-bottom-width) var(--border-left-width);
+  box-sizing: border-box;
   content: "";
   height: 100%;
+  left: 0;
   position: absolute;
+  top: 0;
   width: 100%;
+}
+
+.experience-header {
+  text-align: center;
+}
+
+.experience-header span {
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(99.6983deg, rgb(198, 252, 166) 0%, rgba(167, 252, 232, 0.74) 100%);
+  font-size: 1.05rem;
+  font-weight: 650;
+  line-height: 130%;
+}
+
+
+.experience-header h2 {
+  font-family: 'Pockota Medium';
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 120%;
+  margin: 20px 0 0 0;
 }
 
 
