@@ -33,6 +33,14 @@
     font-display: swap;
 }
 
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100 900;
+  font-style: normal;
+}
+
 body {
     background-color: rgb(8, 24, 34);
     color: rgb(255, 255, 255);
@@ -610,12 +618,15 @@ footer,
 /* EXPERIENCE */
 
 .experience-section {
+  
+  background: rgb(8, 24, 34);
+  font-family: "Inter", sans-serif;
   overflow: hidden;
-  padding: 150px 30px;
+  padding: 150px 30px 25px 30px;
 }
 
 .experience-ellipse {
-  --border-bottom-width: 1px;
+  --border-bottom-width: 0px;
   --border-color: rgba(255, 255, 255, 0.1);
   --border-left-width: 1px;
   --border-right-width: 1px;
@@ -623,7 +634,7 @@ footer,
   aspect-ratio: 1.11328 / 1;
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 100%;
-  height: 1143px;
+  height: 1543px;
   left: -456px;
   opacity: 0.5;
   position: absolute;
@@ -665,11 +676,11 @@ footer,
   font-weight: 400;
   letter-spacing: -0.02em;
   line-height: 120%;
-  margin: 20px 0 0 0;
+  margin: 20px 0 40px 0;
 }
 
 .experience-row {
-  padding: 20px;
+  padding: 45px 20px;
 }
 
 .experience-info h3 {
@@ -694,8 +705,30 @@ footer,
 }
 
 .experience-details p {
+  color: rgba(255, 255, 255, 0.8);
   font-size: 0.875rem;
+  font-weight: 400;
   line-height: 1.375rem;
+}
+
+.experience-line {
+  background: rgba(255, 255, 255, 0.25);
+  height: 1px;
+  width: 100%;
+}
+
+
+/* CONTACT */
+
+.contact-section {
+  background: rgb(8, 24, 34);
+  padding: 0 30px;
+}
+
+.contact-section-container {
+  background: linear-gradient(99.69833281472663deg, rgba(198, 252, 166, 1) 0%, rgba(167, 252, 238, 0.7400000095367432) 100%);
+  border-radius: 16px;
+  padding: 30px;
 }
 
 
